@@ -1,0 +1,69 @@
+{
+  "name": "@zima/ngrx-state-utils",
+  "version": "0.1.0",
+  "description": "Miscellaneous ngrx state-management utils.",
+  "scripts": {
+    "ng": "ng",
+    "build": "ng-packagr -p package.json",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinzima/ngrx-state-utils.git"
+  },
+  "keywords": [
+    "ngrx",
+    "state"
+  ],
+  "author": "Martin Zima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinzima/ngrx-state-utils/issues"
+  },
+  "homepage": "https://github.com/martinzima/ngrx-state-utils#readme",
+  "peerDependencies": {
+    "@angular/core": "^6.1.0",
+    "@angular/common": "^6.1.0",
+    "@angular/router": "^6.1.0",
+    "@ngrx/effects": "^6.1.0",
+    "@ngrx/store": "^6.1.0",
+    "@ngrx/router-store": "^6.1.0",
+    "rxjs": "^6.0.0"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^6.1.0",
+    "@angular/compiler-cli": "^6.1.0",
+    "@angular/core": "^6.1.0",
+    "@angular/common": "^6.1.0",
+    "@angular/router": "^6.1.0",
+    "@ngrx/effects": "^6.1.0",
+    "@ngrx/store": "^6.1.0",
+    "@ngrx/router-store": "^6.1.0",
+    "@types/jasmine": "^2.8.0",
+    "husky": "^0.14.3",
+    "jasmine": "^2.8.0",
+    "lint-staged": "^6.0.0",
+    "ng-packagr": "^3.0.3",
+    "prettier": "^1.9.2",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^6.0.0",
+    "tsickle": "^0.26.0",
+    "tslint": "^5.8.0",
+    "typescript": "~2.9.2",
+    "zone.js": "^0.8.4",
+    "rxjs-compat": "^6.1.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run prettier",
+      "git add"
+    ]
+  }
+}
